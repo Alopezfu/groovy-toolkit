@@ -1,0 +1,66 @@
+{
+  "name": "groovy-toolkit",
+  "displayName": "Groovy ToolKit",
+  "description": "Visaul Studio Code Extension for Groovy",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.68.1"
+  },
+  "categories": [
+    "Formatters"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "Groovy Formatter",
+      "properties": {
+        "groovyFormatter.tabSize": {
+          "type": "number",
+          "default": 2,
+          "minimum": 2,
+          "description": "Número de espacios para la indentación"
+        }
+      }
+    },
+    "languages": [
+      {
+        "id": "groovy",
+        "extensions": [
+          ".groovy"
+        ],
+        "aliases": [
+          "Groovy"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "documentFormatting": [
+      {
+        "language": "groovy",
+        "command": "groovyFormatter.format"
+      }
+    ],
+    "commands": [
+      {
+        "command": "groovy-toolkit.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.100.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.25.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2"
+  },
+  "publisher": "alejandrolopez"
+}
