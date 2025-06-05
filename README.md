@@ -1,5 +1,7 @@
 # Groovy Toolkit VS Code Extension
 
+[Ver en Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=alejandrolopez.groovy-toolkit)
+
 Extensión para Visual Studio Code que formatea código Groovy de manera automática y configurable.
 
 ## Características

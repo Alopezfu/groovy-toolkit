@@ -41,12 +41,6 @@
         "language": "groovy",
         "command": "groovyFormatter.format"
       }
-    ],
-    "commands": [
-      {
-        "command": "groovy-toolkit.helloWorld",
-        "title": "Hello World"
-      }
     ]
   },
   "scripts": {
@@ -55,12 +49,16 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.100.0",
+    "@types/vscode": "^1.68.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
     "eslint": "^9.25.1",
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.5.2"
   },
-  "publisher": "alejandrolopez"
+  "publisher": "alejandrolopez",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alopezfu/groovy-toolkit"
+  }
 }
